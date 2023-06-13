@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Roboto';
+}
+
+.services {
+    padding: 22px;
+    border-radius: 10px;
+}
+
+.services .container {
+    width: 1300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.services .container .title {
+    width: 647px;
+    height: 56px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+.services .container .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+.services .container .cards .block {
+    width: 310px;
+    height: 246px;
+    border-radius: 4px;
+    padding: 22px;
+    box-shadow: 0px 0px 10px rgba(156, 160, 172, 0.4);
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.services .container .cards .block .icon {
+    margin-top: 22px 0 22px 20px;
+
+}
+
+.services .container .cards .block .heading {
+    width: 99px;
+    height: 26px;
+    font-weight: 900;
+    line-height: 26px;
+    font-size: 22px;
+    margin: 20px 0 10px 0;
+}
+
+.services .container .cards .block .text {
+    width: 250px;
+    height: 96px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+.services .container .features{
+    width: 358px;
+    height: 21px;font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 50px auto 150px;
+    color: #000000;
+}
+/* first story */
+.first-story .container {
+    background-color: #111827;
+    width: 1300px;
+    margin: 0 auto;
+}
+.first-story .container .story {
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    position: absolute;
+    background-color: #111827;
+    border-radius: 15px;
+}
+.first-story .container .story .definition{
+    margin: 95px 132px 98px 45px;
+}
+
+.first-story .container .title {
+    width: 492px;
+    height: 54px;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+.first-story .container .text{
+    width: 503px;
+    height: 76px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 20px 0 10px 0;
+    color: #FFFFFF;
+}  
+.first-story .container .ceo{
+    width: 200px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.first-story .container .ceo .modification{
+    font-weight: 700;
+}
+ .first-story .container .jacole{
+    font-family: 'Rochester';
+    color: #FFFFFF;
+    width: 76px;
+    height: 46px;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.first-story .container .img{
+    border-radius: 15px;
+    float: right;
+    margin: 25px 24px 27px 0; 
+    background-color: #111827;
+}
