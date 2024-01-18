@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+@font-face {
+  font-family: "Reco";
+  src: url(../fonts/Recoleta-SemiBold.ttf);
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --green: #163a24;
+  --light-green: #198c36;
+  --text-color: #fbfaf7;
+  --beige: #f2efe6;
+  --pink: #fab5a0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Reco", sans-serif;
+  font-weight: 600;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+button {
+  background: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* General */
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.site-title {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Reco", sans-serif;
+}
+
+.site-title.white {
+  color: var(--text-color);
+}
+
+.site-title.green {
+  color: var(--green);
+}
+
+.text.white {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.text.green {
+  font-size: 18px;
+  color: var(--green);
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--text-color);
+  background: var(--light-green);
+  padding: 15px 25px;
+  border-radius: 160px;
+}
+
+.btn.beige {
+  background: #FAB5A0;
+  color: var(--green);
+  font-weight: 600;
+}
+
+/* Header */
+.header {
+  background: var(--green);
+  padding: 20px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .container .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.header .container .menu .btn {
+  background: var(--light-green);
+  color: var(--text-color);
+  padding: 15px 25px;
+  border-radius: 160px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.header .container .burger {
+  color: var(--text-color);
+  font-size: 25px;
+  display: none;
+}
+.header .container .mobile-menu {
+  display: none;
+}
+
+
+
+/* Hero */
+.hero {
+  background: var(--green);
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .container .text-content .text {
+  padding-top: 20px;
+}
+
+.to-top{
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 60px;
+  bottom: 155px;
+  background: #198c36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px #198c36,
+                    0 0 30px #198c36;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.to-top span{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Partners */
+.partners {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.partners .site-title {
+  margin-bottom: 60px;
+}
+
+.partners .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Production */
+.production {
+  background: var(--green);
+  padding: 90px 0;
+  text-align: center;
+}
+
+.production .site-title {
+  margin-bottom: 60px;
+}
+
+/* Interest */
+.interest {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.interest .container .row {
+  gap: 20px;
+}
+
+.interest .container .text-content {
+  margin-bottom: 20px;
+}
+
+.interest .container .row .card {
+  width: 353px;
+  box-shadow: 5px 5px 20px 0px #E9E4D5;
+  background: var(--text-color);
+  border-radius: 15px;
+  padding: 50px 40px;
+  text-align: left;
+}
+
+.interest .container .row .card img {
+  height: 72px;
+  object-fit: contain;
+}
+
+.interest .container .row .card h3 {
+  margin: 22px 0;
+  font-size: 28px;
+  color: var(--green);
+}
+
+.interest .container .row .card ul li {
+  font-size: 16px;
+  /* list-style: disc; */
+  color: var(--green);
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interest .container .row .card ul li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  position: absolute;
+  left: 0;
+}
+
+/* Easy */
+.easy {
+  background: var(--beige);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.easy .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 45px 0;
+  gap: 45px;
+}
+
+.easy .row .arrow {
+  width: 75px;
+}
+
+.easy .row .step {
+  width: 262px;
+}
+
+.easy .row .step p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--green);
+  margin-bottom: 13px;
+}
+
+.easy .row .step h3 {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Reco', sans-serif;
+  color: var(--green);
+}
+
+.easy .row .step:last-child {
+  position: relative;
+}
+
+.easy .row .step:last-child::after {
+  content: '';
+  width: 280px;
+  height: 175px;
+  position: absolute;
+  top: -50%;
+  left: -5%;
+  z-index: 1000;
+  background-image: url(../images/ring.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Book */
+.book .container .row .text-content {
+  text-align: center;
+}
+
+.book .container .btn {
+  margin-top: 20px;
+}
+
+/* Discovery */
+.discovery {
+  background: var(--green);
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.discovery::before,
+.discovery::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.discovery::before {
+  background: url(../images/before.png) no-repeat left / contain;
+  left: 0;
+  bottom: 0;
+}
+
+.discovery::after {
+  background: url(../images/after.png) no-repeat right / contain;
+  right: 0;
+  bottom: 0;
+}
+
+.discovery .container .text-content .text {
+  margin: 26px 0 18px;
+}
+
+/* Email */
+.email {
+  background: var(--beige);
+  padding: 60px 0;
+}
+
+.email .container .row .text-content .text {
+  margin-top: 26px;
+}
+
+.email .container .row .form .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: var(--white);
+  border-radius: 160px;
+}
+
+.email .container .row .form .top input {
+  padding: 10px 25px;
+  background: 0;
+  border: 0;
+  outline: 0;
+  flex-grow: 1;
+  font-size: 20px;
+  font-family: 'Reco', sans-serif;
+  color: var(--green);
+}
+
+.email .container .row .form .counter{
+  display: none;
+}
+.email .container .row .form .counter.warning{
+  color: red;
+}
+
+.email .container .row .form .counter.active{
+  display: block;
+}
+
+.email .container .row .form p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--green);
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.email .container .row .form p a {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--light-green);
+}
+
+/* Footer */
+
+.footer .footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 40px 0;
+}
+
+.footer .footer-top .text-content .site-title {
+  font-size: 24px;
+}
+
+.footer .footer-top .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer .footer-top .socials a {
+  color: var(--light-green);
+  font-size: 28px;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}
+
+.footer .footer-top .socials a:hover {
+  transform: scale(1.3);
+}
+
+.footer .footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 10px 0;
+  border-top: 1px solid var(--beige);
+}
+
+.footer .footer-bottom p {
+  font-size: 14px;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--green);
+  text-align: center;
+}
+
+.footer .footer-bottom .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer .footer-bottom .links a {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--light-green);
+}
